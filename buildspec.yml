@@ -3,11 +3,11 @@ phases:
   install:
     runtime-versions:
       java: corretto17
-      aws-cli: 2.3.0  # Install AWS CLI version 2
+        #      aws-cli: 2.3.0  # Install AWS CLI version 2
   build:
     commands:
-      - aws --version  # Verify AWS CLI version
-      - mvn clean package
+      #  - aws --version  # Verify AWS CLI version
+      # - mvn clean package
       - aws s3 cp target/myapp.war s3://tomcat1
 artifacts:
   files:
