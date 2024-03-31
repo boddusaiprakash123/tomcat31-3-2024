@@ -1,0 +1,17 @@
+version: 0.0
+
+os: linux
+
+files:
+  - source: /root/myapp.war
+    destination: 
+/opt/tomcat/webapps
+hooks:
+  ApplicationStop:
+    - location: systemctl stop tomcat.service 
+      timeout: 180
+      runas: root
+  ApplicationStart:
+    - location: systemctl start tomcat.service
+      timeout: 180
+      runas: root
