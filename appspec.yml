@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: test/myapp.war
+  - source: /myapp.war
     destination: 
 /opt/tomcat/webapps
 hooks:
