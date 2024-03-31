@@ -8,8 +8,8 @@ phases:
     commands:
       #  - aws --version  # Verify AWS CLI version
       # - mvn clean package
-      - aws s3 cp /myapp.war s3://tomcat1
+      - aws s3 cp /root/myapp.war s3://tomcat1
 artifacts:
   files:
-    - myapp.war
+    - /root/myapp.war
 
