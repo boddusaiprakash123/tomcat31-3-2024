@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /root/test/myapp.war
+  - source: /root/test/
     destination: /opt/tomcat/webapps/myapp
 hooks:
   AfterInstall:
